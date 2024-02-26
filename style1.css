@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header{
+    background: #f2f2f2;
+    min-height: 50px;
+    display: flow-root;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+
+header .logo {
+    float: left;
+}
+
+.logo a, .logo h1{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo h1{
+    margin: 0;
+    margin-left: 10px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav > ul > li {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+}
+
+ul.subnav {
+    display: none;
+    position: absolute;
+    list-style-type: none;      
+    /* top: 0; */
+    left: 0; 
+    
+    padding-left: 0;
+    padding-top: 20px;
+    min-width: 200px;
+}
+
+ul.subnav li {
+    border: 1px solid #ccc;
+    padding: 5px 10px 5px 10px;
+    margin: 3px 0px;
+
+}
+
+nav ul li:hover{
+    background: #f2f2f2;
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+header nav ul li:hover ul.subnav{
+    display: block;
+    
+}
+
+/* header nav > ul > li{
+    position: relative;
+}
+
+
+header nav ul li:hover ul.subnav{
+    display: block;
+    
+}
+
+header nav ul.subnav{
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    margin: 0px;
+    padding-left: 0;
+    margin-left: 0;
+    
+}
+
+ul.subnav li {
+    display: block;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li a:hover {
+    background-color:#f2f2f2;
+} */
+
+
+
+main{
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+    min-height: 50px;
+    padding: 30px;
+}
+
+footer{
+    background: #f2f2f2;
+    min-height: 50px;
+    clear: both;
+
+}
+
+footer nav{
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+footer div.copyright{
+    float: left;
+    padding: 10px;
+    width: 50%;
+}
+
+footer nav a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer nav a:hover{
+    text-decoration: underline;
+} 
+
+ article img{
+    max-width: 400px;
+}
+
+.img-left{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color:#FF757C;
+}
+
+.img-right{
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.przycisk{
+    border:3px solid lightblue ;
+    color: black;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.przycisk:hover{
+    background-color: grey;
+    color: black;
+}
+
+section article{
+    margin-bottom: 40px;
+}
+
+section.lewy, section.kontakt{
+    width: 50%;
+    float: left;
+    height: 200px;
+
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th{
+    background-color: lightgrey;
+}
+
+section.kontakt ul{
+    list-style-type: none;
+}
+
+li.telefon::before, li.email::before{
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    margin-left:-3em;
+
+}
+li.telefon::before{
+    background: url('img/operator.png') no-repeat center center; 
+    background-size: auto 100%;
+     
+}
+
+li.email::before{
+    background: url('img/letter1.png') no-repeat center center; 
+    background-size: auto 100%; 
+}
+
+
+
+
+
